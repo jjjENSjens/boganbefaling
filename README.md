@@ -1,11 +1,14 @@
 # Hvad skal jeg læse? 
 ### boganbefalingssystem
 <b>ide</b> <br>
-anbefaling af bøger baseret på indtastede variblerne: køn og/eller alder <br>
+anbefaling af bøger baseret på indtastede varibler: køn og/eller alder <br>
 de anbefalede bøger skal være en top 10 over mest lånte bøger (f.eks. for en kvinde på 27 år) <br>
 baseret på åbne data fra DBC der viser bibliotekslån for ét år <br>
 
 <b>udfordringer</b> <br>
+simpelt interface der gør der muligt at indtaste alder og/eller køn <br>
+hvorefter 10 bøger med cover og andre informationer vil være resultatet <br>
+
 kombinere to datasæt: udlånsdata + materialedata <br>
 udlånsdata indeholder bl.a.: materiale_id, køn, fødselsår <br>
 materialedata indeholder bl.a.: materiale_id, title, type, creator, decription <br>
