@@ -3,7 +3,7 @@
 }
 
 
-.header, .footer {
+.header,  {
     //background-color: grey;//
     color: white;
     padding: 40px;
@@ -32,25 +32,20 @@
     display: inline-block;
 }
 
-.resultat img {
-	float: left;
-	width: 200px;
-    	height: auto;
-	position: absolute;
 
-}
 .resultat p {
 	padding-left: 210px;
 }
-//boxen som kommer frem med metadata
+
 .meta {
     display: none;
     border:1px solid #521;
-    height:45px;
-    width:290px;
-	
-
+width:400px;    
+height:autopx;
+    
 	float: bottom;
+
+
 }
 #meta:active {
 	
@@ -59,4 +54,11 @@
 
 a:hover + div {
     display: block;
-}?
+}
+.resultat img {
+	float: left;
+	width: 200px;
+    	height: auto;
+	position: absolute;
+
+}
