@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="stylesheet.css">
+<title>Find din bog</title>
+	</head>
+	
+	<body>
+		
+		<h1>Hvem l&aelig;ser hvad</h1>
+		<h2>Find din bog</h2>
+		
+		<br>
+		
+		
+		
+			<select class="dropdownkon">
+			<option selected disabled>K&oslash;n</option>
+			<option value="Mand">Mand</option>
+			<option value="Kvinde">Kvinde</option>
+			</select>
+		
+			<select class="dropdownalder">
+			<option selected disabled>Alder</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			</select>
+		
+		
+			
+		<br>
+		<br>
+		
+		
+		
+		<a href="resultat.html">
+		<img src="img/search.png" style="width:100px;height:100px;margin-left: 250px; position: static;">
+		</a>
+		
+		<a><img src="img/info.png" style="width:30px;height:30px;margin-right: 200px; margin-top: 100px;" align="right"></a>
+		<div>Vælg alder og køn og få anbefalt de 10 mest lånte bøger baseret på demografiske data fra DBC</div>
+		
+		<div id=recommendations></div>
+		<script src="https://openplatform.dbc.dk/v1/dbc_openplatform.min.js"></script>
+		<script src="recommender.js"></script>
+		
+
+
+</body>
+	
+</html>

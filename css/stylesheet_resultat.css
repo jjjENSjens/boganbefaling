@@ -1,0 +1,62 @@
+.indhold {
+	padding: 50px;
+}
+
+
+.header, .footer {
+    //background-color: grey;//
+    color: white;
+    padding: 40px;
+	 text-align: center;
+}
+.return {
+	float: left;
+	border: 3px solid #73AD21;
+	padding: 1px;
+
+	
+}
+.resultat {
+	float: left;	
+	border: 3px solid #73AD21;
+	width: 400px;
+    	height: 300px;
+	margin-right: 30px;
+    	margin-top: 30px;
+	margin-left: 30px;
+}	
+	
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.resultat img {
+	float: left;
+	width: 200px;
+    	height: auto;
+	position: absolute;
+
+}
+.resultat p {
+	padding-left: 210px;
+}
+//boxen som kommer frem med metadata
+.meta {
+    display: none;
+    border:1px solid #521;
+    height:45px;
+    width:290px;
+	
+
+	float: bottom;
+}
+#meta:active {
+	
+	margin-top:500px;
+}
+
+a:hover + div {
+    display: block;
+}?

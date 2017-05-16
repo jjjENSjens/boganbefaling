@@ -1,0 +1,45 @@
+body {
+	background-color: powderblue;
+	font-family: verdana;
+	text-align: center;
+}
+
+h1 {
+	font-size: 40px;
+	
+}
+
+h2 {
+	font-size: 20px;
+}
+
+.dropdownkon {
+	width: 70px;
+}
+
+.dropdownalder {
+	width: 70px;
+}
+
+div {
+    display: none;
+    border:1px solid #521;
+    height:135px;
+    width:135px;
+	margin-top: 150px;
+	margin-left: 600px;
+}
+
+
+a:hover + div {
+    display: block;
+}?
+
+#infoA {
+	float:right;
+}
+	
+
+
+
+
