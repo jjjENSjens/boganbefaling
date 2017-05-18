@@ -133,8 +133,7 @@
     <div>Vælg alder og køn og få anbefalt de 10 mest lånte bøger baseret på demografiske data fra DBC</div>
     <script>
 function results() {
-  let alder = Number(document.getElementById('alder').value);
-  let year = Number(today.getFullYear()) - 2016;
+  let year = 2016 - Number(document.getElementById('alder').value) ;
   let url = 'resultat.html?' + document.getElementById('kon').value + year;
   location.href = url;
 }
