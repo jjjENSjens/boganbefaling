@@ -28,9 +28,9 @@ async function recommendations(user, id) {
 
       <div>
          ${i}
-         <img width=200
+		<img width=200
          src=${(meta.coverUrlThumbnail||[])[0] || 'noun_962017_4C4C4C.png'}>
-         <b>${(meta.title||[])[0]}</b> padding-left: 210px<br>
+         <b>${(meta.title||[])[0]}</b> <br>
          <i>${(meta.creator||[]).join(' &amp; ')}</i><br>
        </div>
 

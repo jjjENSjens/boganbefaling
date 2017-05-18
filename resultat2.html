@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="dk">
+
+<head>
+<!--character encoding. sikrer at alle browsere kan læse karakter codningen rigtigt-->
+  <meta charset="utf-8">
+
+  <title>Resultater</title>
+ <!--link til vores stylesheet-->
+  <link rel="stylesheet" href="css/stylesheet_resultat.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+<!--Hjemmesidens navn angives med h1 og Resultater som er sekkundær, med h2-->
+	
+	<div class="header">
+
+
+		<h1>Overskrift</h1>
+		<h2>Resultater og andet</h2>
+
+		<div class="return">
+	<a href="index.html"> Ny s&oslash;gning </a>
+		</div>	
+</div>
+    <div id="result">
+    </div>
+
+<!--scriptet er placeret i bunden, så det bliver det sidste der bliver uploadet. Således er der ikke ventetid fra start-->
+  <script src="https://openplatform.dbc.dk/v1/dbc_openplatform.min.js"></script>
+  <script src="recommender2.js"></script>
+  <script>
+recommendations(location.search.slice(1), 'result');
+  </script>
+</body>
+</html>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="stylesheet.css">
-    <title>Find din bog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./stylesheet.css" type="text/css">
+    <title>Hvem læser hvad?</title>
   </head>
 
   <body>
 
-    <h1>Hvem l&aelig;ser hvad</h1>
-    <h2>Find din bog</h2>
+    <h1>Hvem l&aelig;ser hvad?</h1>
+    <h2>Find de mest lånte bøger baseret på alder og køn</h2>
 
     <br>
 
@@ -20,6 +20,7 @@
     </select>
 
     <select id="alder" class="dropdownalder">
+		<option selected disabled>Alder</option>
       <option value="3">3</option>
       <option value="4">4</option>
       <option value="5">5</option>
@@ -120,18 +121,15 @@
       <option value="100">100</option>
     </select>
 
-
-
     <br>
     <br>
 
+    <img id="search" src="img/search.png" onClick="results()">
 
-
-    <img src="img/search.png" style="width:100px;height:100px;margin-left: 250px; position: static;" onClick="results()">
-
-    <a><img src="img/info.png" style="width:30px;height:30px;margin-right: 200px; margin-top: 100px;" align="right"></a>
-    <div>Vælg alder og køn og få anbefalt de 10 mest lånte bøger baseret på demografiske data fra DBC</div>
-    <script>
+    <a><img id="info" src="img/info.png"></a>
+	<div> Vælg alder og køn og få anbefalet de 10 mest lånte bøger baseret på demografiske data fra DBC fra 2016</div>
+	
+	<script>
 function results() {
   let year = 2016 - Number(document.getElementById('alder').value) ;
   let url = 'resultat.html?' + document.getElementById('kon').value + year;
