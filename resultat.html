@@ -27,118 +27,14 @@
 	<a href="index.html"> Ny s&oslash;gning </a>
 		</div>	
 </div>
-	
-		<div class="indhold">
-
-			<div class="resultat">
-				<!-- Skal indeholde billedet for bogtitlen--> 
-
-				<img class src="https://bibliotek.dk/sites/default/files/styles/medium/public/moreinfo/detailUrl/d223d511f908edd26d075ee82c5925fc.jpg?itok=hc5zu2an" alt="metanavn">
-				
-
-		
-		
-			<p>Titel #1</p> <!-- Skal indeholde det første resultats titel--> 
-			<p>Forfatter</p> <!-- Skal indeholde det første resultats forfatter--> 
-
-			<p>Resum&eacute;</p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque tristique quam, quis pellentesque dolor ultricies hendrerit. Pellentesque scelerisque erat ut tortor tempor auctor. Quisque venenatis lorem ac nibh commodo, a accumsan ipsum accumsan. Pellentesque a ligula quis turpis dictum convallis.
-			<a id=meta><p>Mere</p></a> <!-- Skal indeholde det første resultats bog-resumé--> 
-
-						
-			<div class="meta"> <!-- Skal indeholde metadata fra det første resultat--> 
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque tristique quam, quis pellentesque dolor ultricies hendrerit. Pellentesque scelerisque erat ut tortor tempor auctor. Quisque venenatis lorem ac nibh commodo, a accumsan ipsum accumsan. Pellentesque a ligula quis turpis dictum convallis. 
-			</div>
-</div>			
-	
-
-			</div>
-			<div class="resultat">
-		
-			
-			<p>Titel #2</p>
-			<p>Forfatter</p>
-			<p>Resum&eacute;</p>
-			<p>Mere</p>	
-
-			</div>
-			<div class="resultat">
-		
-		
-			<p>Titel #3</p>
-			<p>Forfatter</p>
-			<p>Resum&eacute;</p>
-			<p>Mere</p>	
-
-			</div>
-			<div class="resultat">
-		
-		
-			<p>Titel #4</p>
-			<p>Forfatter</p>
-			<p>Resum&eacute;</p>
-			<p>Mere</p>	
-
-			</div>
-			<div class="resultat">
-		
-		
-			<p>Titel #5</p>
-			<p>Forfatter</p>
-			<p>Resum&eacute;</p>
-			<p>Mere</p>	
-
-			</div>
-			<div class="resultat">
-		
-		
-			<p>Titel #6</p>
-			<p>Forfatter</p>
-			<p>Resum&eacute;</p>
-			<p>Mere</p>	
-
-			</div>
-			<div class="resultat">
-		
-		
-			<p>Titel #7</p>
-			<p>Forfatter</p>
-			<p>Resum&eacute;</p>
-			<p>Mere</p>	
-
-			</div>
-			<div class="resultat">
-		
-		
-			<p>Titel #8</p>
-			<p>Forfatter</p>
-			<p>Resum&eacute;</p>
-			<p>Mere</p>	
-
-			</div>
-			<div class="resultat">
-		
-		
-			<p>Titel #9</p>
-			<p>Forfatter</p>
-			<p>Resum&eacute;</p>
-			<p>Mere</p>	
-
-			</div>
-			<div class="resultat">
-		
-		
-			<p>Titel #10</p>
-			<p>Forfatter</p>
-			<p>Resum&eacute;</p>
-			<p>Mere</p>	
-
-			</div>
-		</div>
-
+    <div id="result">
+    </div>
 
 <!--scriptet er placeret i bunden, så det bliver det sidste der bliver uploadet. Således er der ikke ventetid fra start-->
-  <script src="js/scripts.js"></script>
+  <script src="https://openplatform.dbc.dk/v1/dbc_openplatform.min.js"></script>
+  <script src="recommender.js"></script>
+  <script>
+recommendations(location.search.slice(1), 'result');
+  </script>
 </body>
 </html>
