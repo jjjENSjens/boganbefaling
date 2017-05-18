@@ -20,6 +20,7 @@
     </select>
 
     <select id="alder" class="dropdownalder">
+      <option value="3">3</option>
       <option value="4">4</option>
       <option value="5">5</option>
       <option value="6">6</option>
@@ -117,10 +118,6 @@
       <option value="98">98</option>
       <option value="99">99</option>
       <option value="100">100</option>
-      <option value="101">101</option>
-      <option value="102">102</option>
-      <option value="103">103</option>
-
     </select>
 
 
@@ -137,11 +134,9 @@
     <script>
 function results() {
   let alder = Number(document.getElementById('alder').value);
-  let today = new Date();
-  let year = Number(today.getFullYear()) - alder;
+  let year = Number(today.getFullYear()) - 2016;
   let url = 'resultat.html?' + document.getElementById('kon').value + year;
   location.href = url;
-
 }
     </script>
 
