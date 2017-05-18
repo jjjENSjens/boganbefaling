@@ -18,22 +18,28 @@ async function recommendations(user, id) {
 
     let meta = await dbcOpenPlatform.work({
       pids: [bog_id], 
-      fields: ['title', 'creator', 'coverUrlThumbnail', 'description', 'abstract']});
+      fields: ['title', 'creator', 'coverUrlThumbnail', 'description', 'abstract', 'workType']});
     meta = meta[0];
 
     let elem = document.getElementById(id);
-    console.log(meta);
-    elem.innerHTML += `
+
+    if((meta.workType||[])[0] === 'book') {
+      elem.innerHTML += `
 
       <div>
          ${i}
-         <img src=${(meta.coverUrlThumbnail||[])[0]}>
+         <img width=43
+         src=${(meta.coverUrlThumbnail||[])[0] || 'noun_962017_4C4C4C.png'}>
          <b>${(meta.title||[])[0]}</b>
          <i>${(meta.creator||[]).join(' &amp; ')}</i>
        </div>
 
     `;
-    i = i + 1;
+      i = i + 1;
+    }
+    if(i > 10) {
+      break
+    }
 
   }
 }
