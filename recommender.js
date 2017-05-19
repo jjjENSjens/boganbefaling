@@ -32,8 +32,8 @@ async function recommendations(user, id) {
          src=${(meta.coverUrlThumbnail||[])[0] || 'noun_962017_4C4C4C.png'}>
          <b>${(meta.title||[])[0]}
          <i>${(meta.creator||[]).join(' &amp; ')}</i><br>
-       </div>
-
+       </div> 
+	   
     `;
 	
       i = i + 1;
