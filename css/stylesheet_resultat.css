@@ -4,7 +4,7 @@
 }
 
 .header,  {
-    //background-color: grey;//
+    background-color: grey;
     color: white;
     padding: 40px;
 	 text-align: center;
@@ -16,7 +16,10 @@
 
 	
 }
-	
+.titel {
+	border: 3px solid #73AD21;
+	color: blue;
+}	
 
 .dropdown {
     position: relative;
@@ -24,11 +27,7 @@
 }
 
 
-#result {
-	padding-left: 210px;
-	color:red;
-	float: left;
-}
+
 
 .meta {
     display: none;

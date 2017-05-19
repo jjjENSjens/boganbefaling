@@ -54,6 +54,8 @@ a:hover + div {
     display: block;
 }?
 
-
-
+div.resultat {
+	width:30px;	
+	height:30px;
+}
 
