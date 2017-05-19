@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
-    <title>Hvem læser hvad?</title>
-  </head>
+<!DOCTYPE html> <!-- Valg af dokumenttype. DOCTYPE html dækker HTML5 -->  
+<html> <!-- HTML åbnings-tag -->
+  <head> <!-- Head åbnings-tag -->
+  <title>Hvem læser hvad?</title> <!-- Navnet på siden som også står i fanebladet i browseren -->
+    <meta charset="UTF-8"> <!-- Meta-tagget forklare hvilke bogstaver der er tilladt. UTF-8 er et globalt karaktersæt, der inkludere ÆØÅ -->
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css"> <!-- Her linkes der til filen stylesheet.css, som ligger i mappen css -->
+ 
+  </head> <!-- Head luknings-tag -->
 
-  <body>
+  <body> <!-- Body åbnings-tag. Det der står mellem body-tagget er alt sidens indhold. Det udenom vil ikke blive vist. -->
 
-    <h1>Hvem l&aelig;ser hvad?</h1>
-    <h2>Find de mest lånte bøger baseret på alder og køn</h2>
+    <h1>Hvem læser hvad?</h1> <!-- Overskrift 1 -->
+    <h2>Find de mest lånte bøger baseret på alder og køn</h2> <!-- Overskrift 2 -->
 
-    <br>
+    <br> <!-- Linjeskift -->
 
-    <select id="kon" class="dropdownkon">
-      <option selected disabled>K&oslash;n</option>
+    <select id="kon" class="dropdownkon"> <!-- Dropdown selektor som styles via class atributten -->
+      <option selected disabled>Køn</option>
       <option value="m">Mand</option>
       <option value="k">Kvinde</option>
     </select>

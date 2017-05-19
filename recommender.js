@@ -26,13 +26,26 @@ async function recommendations(user, id) {
     if((meta.workType||[])[0] === 'book') {
       elem.innerHTML += `
 
-      <div class="resultat">
+      <div class="resultat" style="display:inline-block;width:49%;marginLeft:300;marginRight:300;">
          ${i}
-         <img width=200
-         src=${(meta.coverUrlThumbnail||[])[0] || 'noun_962017_4C4C4C.png'}>
-         <b>${(meta.title||[])[0]}
-         <i>${(meta.creator||[]).join(' &amp; ')}</i><br>
+         <img style="float:left;" width=200
+         src=${(meta.coverUrlThumbnail||[])[0] || 'img/noun_962017_4C4C4C.png'}>
+         <b>${(meta.title||[])[0]} </b>
+		 <br>
+         <i>${(meta.creator||[]).join(' &amp; ')}</i></i>
+		 <p>${(meta.abstract||[])[0]}</p>
+		
+		 <button onclick="myFunction()">Mere info</button>
+		
+		 
        </div> 
+	   
+	    <script>
+		function myFunction() {
+		document.getElementById("demo").innerHTML = "Hello World";
+		}
+</script>
+	   
 	   
     `;
 	
@@ -41,6 +54,9 @@ async function recommendations(user, id) {
     if(i > 10) {
       break
     }
+	
+	
+	
 
   }
 }

@@ -1,0 +1,52 @@
+body {
+	margin: auto; /* Margin rettes automatisk */
+    width: 50%; /* Indholder fylder aldrig mere en 50 af browserens bredde */
+    padding: 80px; /* Hvor langt fra toppen af siden skal indholdet være */
+	text-align: center; /* Alt tekst, dropdown-lister og billeder er centreret */
+	font-family: sans-serif; /* Serif srifttype*/
+	background-color:  #f5f5f0; /* Lys grå baggrundsfarve */
+}
+
+h1 {
+	font-size: 40px; /* Størrelse på overskriften */
+	
+}
+
+h2 {
+	font-size: 20px;
+}
+
+
+.dropdownkon {
+	width: 70px;
+}
+
+.dropdownalder {
+	width: 70px;
+}
+
+#search {
+	width:100px;
+	height:100px;
+	margin-left:110px;
+	
+}
+
+#info {
+	width:30px;	
+	height:30px;
+	margin-left:50px;
+	
+}
+	
+div {
+    display: none;  /* Vis ingenting når musen ikke er over */
+    text-align: left; /* Teskten skal her stå til højre */
+	margin: auto;
+	margin-top: 10px;
+}
+
+a:hover + div {
+    display: block;
+}?
+
